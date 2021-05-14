@@ -87,25 +87,6 @@ a {
   color: #43d6b9ff;
   text-decoration: none;
 }
-
-#fact {
-  border-style: none;
-
-  padding: 15px;
-
-  margin-top: 30px;
-  margin-left: 15%;
-  margin-right: 15%;
-
-  font-family: "Roboto Mono", sans-serif;
-  font-size: 2em;
-  text-align: center;
-  line-height: 1.2em;
-  color: #43d6b9ff;
-
-}
-
-
   
 
 /* STYLE NAV BAR */
@@ -157,4 +138,159 @@ img {
   border-radius: 5px;
 }
 
+.flex-container {      
+  display: flex;       
+  flex-direction: row; 
+  flex-wrap: nowrap;   
+} 
+
+.flex-item {           
+  flex-basis: 100%;    
+  margin: 1%;          
+}
+
+/* STYLE BUTTONS */
+#factBtn {
+  background: #0D38D3;
+  border-style: none;
+  border-radius: 10px;
+
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  color: #ffffff;
+  font-size: 1em;
+}
+
+#scriptBtn {
+  background: #0D38D3;
+  border-style: none;
+  border-radius: 10px;
+
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  color: #ffffff;
+  font-size: 1em;
+}
+
+/* STYLE GENERATE A FACT KEY FEATURE */
+.genFact {
+  background: #FAC748;
+  border-radius: 10px;
+  border-style: none;
+
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 1.2em;
+  color: #0D38D3;
+}
+
+#fact {
+  border-style: none;
+
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.2em;
+  color: #43d6b9ff;
+
+}
+
+/* STYLE PERSONALIZE IT KEY FEATURE  */
+
+.scriptQues {
+  background: #FAC748;
+  border-radius: 10px;
+
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 0.9em;
+  color: #0D38D3;
+}
+
+.scriptItem{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+input {
+  border-style: none;
+  border-radius: 5px;
+  width: 60%;
+}
+
+#scriptReturned {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  color: #FFFFFF;
+}
+
+/* STYLE MISC */
+.resources {
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.resources li {
+  margin-bottom: 15px;
+}
+
+/* MEDIA QUERIES  - Includes Make it responsive Key Feature */
+@media screen and (max-width: 850px) { /* Breakpoint 1 */
+  .flex-container {
+    flex-wrap: wrap; 
+  }
+
+  header {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  main { 
+  margin-left: 5%;
+  margin-right: 5%;          
+  }
+  
+  .genFact, #fact {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+
+  #fact {
+  font-size: 1.5em;
+  }
+
+}
 
